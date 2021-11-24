@@ -125,8 +125,6 @@ def localization(mx,my,benchids_node,benchids_dst,nodeids_loc):
     p.solve()
     return x,y
 
-
-#if (solution) is ((0,0),(0,0),(0,0)) 
 bfar = np.zeros((3, 4))
 bmiddle = np.zeros((3, 4))
 bbest = np.zeros((3, 4))
@@ -138,7 +136,6 @@ print('weight',weights)
 
 C_v = weights 
 n = 4
-print('weights:',weights)
 
 with Model() as M:
   x = M.variable([n,1], Domain.binary())
